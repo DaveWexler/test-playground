@@ -1,0 +1,32 @@
+<h1><%= @person.name %></h1>
+
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <tr>
+        <td>Name:</td>
+        <td><%= best_in_place @person, :name %></td>
+      </tr>
+      <tr>
+        <td>Weight:</td>
+        <td><%= best_in_place @person, :weight %></td>
+      </tr>
+      <tr>
+        <td>Height:</td>
+        <td><%= best_in_place @person, :height %></td>
+      </tr>
+      <tr>
+        <td>Is this person awesome? </td>
+        <td><%= best_in_place @person, :is_awesome, as: :select, collection: {true => "true", false => "false"} %>
+      </tr>
+      <tr>
+        <td>The best ice cream flavor is: </td>
+        <td><%= best_in_place @person, :favorite_flavor %>
+      </tr>
+      <tr>
+        <td>Bio: </td>
+        <td><%= best_in_place @person, :bio %>
+      </tr>
+    </table>
+  </div>
+</div>
