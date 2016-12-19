@@ -10,21 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161213192214) do
+ActiveRecord::Schema.define(version: 20161216195031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "attribs", force: :cascade do |t|
+    t.integer  "person_id"
+    t.string   "name"
+    t.string   "value"
+    t.boolean  "filterable?", default: false
+    t.string   "value_type",  default: "string"
+    t.boolean  "allow_null?", default: false
+    t.boolean  "primary?",    default: false
+    t.boolean  "required?",   default: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
   create_table "people", force: :cascade do |t|
-    t.text     "name"
-    t.text     "height"
-    t.integer  "weight"
-    t.text     "hometown"
-    t.boolean  "is_awesome"
-    t.text     "favorite_flavor"
-    t.text     "bio"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
