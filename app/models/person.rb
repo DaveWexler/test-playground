@@ -7,15 +7,21 @@ class Person < ApplicationRecord
   # end
 
   def create_attribs(attrs)
-    attrs.each do |k,v|
-      attrib = {}
-      attrib[:name] = k.to_s
-      attrib[:value] = v
-      attrib[:person_id] = self.id
-      a = Attrib.new(attrib)
+    attrs.each do |key,val|
+      a = Attrib.new({name: key.to_s, value: val})
       a.person = self
       a.save
     end
+    # attrs.each do |k,v|
+    #   attrib = {}
+    #   attrib[:name] = k.to_s
+    #   attrib[:value] = v
+    #   byebug
+    #   a = Attrib.new(attrib)
+    #   byebug
+    #   a.person = self
+    #   a.save
+    # end
   end
 
   def name

@@ -1,10 +1,8 @@
 class Attrib < ApplicationRecord
   belongs_to :person
 
-  attr_accessor :name, :value, :person_id
-
-  validates :value_type, inclusion: {in: ["string","integer","float","boolean"], message: "must be a valid data type"}
-  validates :name, :value, presence: true
+  # validates :value_type, inclusion: {in: ["string","integer","float","boolean"], message: "must be a valid data type"}
+  # validates :name, :value, presence: true
 
   # def initialize(attributes = {})
   #   self.name = attributes[:name]
