@@ -3,9 +3,17 @@
 <div class="container">
   <div class="row">
     <table class="table">
+        <tr>
+          <th>Attribute Name</th>
+          <th>Data Type</th>
+          <th>Function</th>
+          <th>Value</th>
+        </tr>
       <% @person.attribs.each do |attrib| %>
         <tr>
           <td><%= best_in_place attrib, :name, as: :input %></td>
+          <td><%= best_in_place attrib, :value_type, as: :select, collection: {"string" => "string", "integer" => "integer", "boolean" => "boolean", "float" => "float"} %></td>
+          <td><span id="attrib-<%= attrib.id %>"><%= best_in_place attrib, :function_label %></span></td>
           <td><%= best_in_place attrib, :value, as: :textarea %></td>
         </tr>
       <% end %>

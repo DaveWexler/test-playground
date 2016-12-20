@@ -19,13 +19,14 @@ ActiveRecord::Schema.define(version: 20161216195031) do
     t.integer  "person_id"
     t.string   "name"
     t.string   "value"
-    t.boolean  "filterable?", default: false
-    t.string   "value_type",  default: "string"
-    t.boolean  "allow_null?", default: false
-    t.boolean  "primary?",    default: false
-    t.boolean  "required?",   default: false
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.boolean  "filterable",     default: false
+    t.string   "value_type",     default: "string"
+    t.boolean  "allow_null",     default: true
+    t.boolean  "primary",        default: false
+    t.boolean  "required",       default: false
+    t.string   "function_label", default: ""
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
   create_table "people", force: :cascade do |t|

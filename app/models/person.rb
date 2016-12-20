@@ -12,16 +12,6 @@ class Person < ApplicationRecord
       a.person = self
       a.save
     end
-    # attrs.each do |k,v|
-    #   attrib = {}
-    #   attrib[:name] = k.to_s
-    #   attrib[:value] = v
-    #   byebug
-    #   a = Attrib.new(attrib)
-    #   byebug
-    #   a.person = self
-    #   a.save
-    # end
   end
 
   def name
