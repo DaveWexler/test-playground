@@ -1,0 +1,6 @@
+<h1>Welcome to Dave's playground!</h1>
+<h3>Select a Payload:</h3>
+
+<% @payloads.each do |payload| %>
+  <%= link_to payload.name, payload_path(payload.id) %>
+<% end %>
