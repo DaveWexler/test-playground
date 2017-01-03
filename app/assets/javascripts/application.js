@@ -40,16 +40,16 @@ cancel_button.click(function() {
 add_row_button.click(function(){
   $("#json-rows form").append(`<div class="row json-row">
     <div class="key-field col-xs-5">
-      <input class="key-data">
+      <input class="key-data form-control">
     </div>
     <div class="colon-holder col-xs-1">
       <span>:</span>
     </div>
     <div class="value-field col-xs-5">
-      <input class="value-data">
+      <input class="value-data form-control">
     </div>
     <div class="delete-area col-xs-1">
-      <button class="delete-button" type="button">X</button>
+      <button class="delete-button btn" type="button">X</button>
     </div>
   </div>`);
 });

@@ -1,13 +1,13 @@
-<h1><%= @payload.name %></h1>
+<label class="control-label"><%= @payload.name %></label>
 
 <div class="container">
   <div class="row">
     <div id="payload-params">
       <div id="text-spot">
-        <textarea id="text-area"></textarea>
+        <textarea id="text-area" class="form-control"></textarea>
       </div>
-      <div id="modal">
-        <div id="modal-content">
+      <div id="modal" class="modal-dialog modal-lg">
+        <div id="modal-content" class="modal-content">
           <div id="json-rows">
             <form id="json-form">
             <div class="row">
@@ -25,23 +25,23 @@
             </div>
             <div class="row json-row">
               <div class="key-field col-xs-5">
-                <input class="key-data">
+                <input class="key-data form-control">
               </div>
               <div class="colon-holder col-xs-1">
                 <span>:</span>
               </div>
               <div class="value-field col-xs-5">
-                <input class="value-data">
+                <input class="value-data form-control">
               </div>
               <div class="delete-area col-xs-1">
-                <button class="delete-button" type="button">X</button>
+                <button class="delete-button btn" type="button">X</button>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button id="save-button" type="submit">Save</button>
-            <button id="cancel-button" type="button">Cancel</button>
-            <button id="add-row" type="button">Add a Row</button>
+            <button id="save-button" type="submit" class="btn btn-success">Save</button>
+            <button id="cancel-button" type="button" class="btn btn-success">Cancel</button>
+            <button id="add-row" type="button" class="btn btn-success">Add a Row</button>
           </div>
         </form>
         </div>
