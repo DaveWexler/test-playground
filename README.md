@@ -1,5 +1,10 @@
 # README
 
+Best In Place documentation: http://www.rubydoc.info/gems/best_in_place/3.1.0#best_in_place
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
