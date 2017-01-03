@@ -70,7 +70,6 @@ json_form.submit(function(event) {
   var final = JSON.stringify(pairs)
   text_area.val(final)
   modal.css("display", "none")
-  debugger
 })
 
 });
