@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/flatironschool/xapix/projects/json-helper/json_input_bootstrap_rails
+  specs:
+    json_input_bootstrap_rails (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -165,6 +170,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
+  json_input_bootstrap_rails!
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)

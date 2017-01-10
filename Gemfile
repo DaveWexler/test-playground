@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'best_in_place', '~> 3.0.1'
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'json_input_bootstrap_rails', path: '/Users/flatironschool/xapix/projects/json-helper/json_input_bootstrap_rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
